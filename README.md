@@ -28,7 +28,7 @@ We track our standings and crush problems across various competitive programming
 ---
 
 ## 🛠️ Tech Stack & Weapons
-* Languages: Java (Main) & C++ 
+* Language: C++ 
 * Core Topics: Time Complexity, Dynamic Programming, Graph Theory, Advanced Data Structures, and Mathematics.
 * Database Tasks: MySQL (for platform-specific system designs or queries).
 
