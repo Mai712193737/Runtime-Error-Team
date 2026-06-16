@@ -1,12 +1,23 @@
+
 #include <iostream>
-#include <string>
+#include <algorithm>
 using namespace std;
 
-int main () {
+int main() {
+    int a, b, c;
+    cin >> a >> b >> c;
 
+    int arr[3] = {a, b, c};
 
-return 0;
+    sort(arr, arr + 3);
+
+    cout << arr[0] << " " << arr[1] << " " << arr[2] << endl;
+
+    cout << a << " " << b << " " << c << endl;
+
+    return 0;
 }
+
 /*Ouda has three numbers A,B,C
 . One day he decided to sort them ascendingly and write the answer.
 
