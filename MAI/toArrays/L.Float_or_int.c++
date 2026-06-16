@@ -1,4 +1,16 @@
-
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main() {
+    float n;
+    cin >> n;
+    if (n == (int)n) {
+        cout << "int " << (int)n << endl;
+    } else {
+        cout << "float " << (int)n << " " << fixed << setprecision(3) << n - (int)n << endl;
+    }
+    return 0;
+}
 
 /*Given a number N
 . Determine whether N
