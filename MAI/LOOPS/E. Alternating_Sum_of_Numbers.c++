@@ -1,26 +1,17 @@
-#include <bits/stdc++.h>
-using namespace std;
-int main (){
-cin >> t;
-for (int i =0;i<t;i++){}
+for (int i = 1; i <= t; i++) {
+    int n;
     cin >> n;
-    int sum =0;
-    for (int j =0;j<n;j++){
+    int sum = 0;
+    for (int j = 1; j <= n; j++) {
         int x;
         cin >> x;
-        if (j%2==0){
-            sum+=x;
-        }
-        else{
-            sum-=x;
-        }
+        if (j % 2 == 1)
+            sum += x;
+        else
+            sum -= x;
     }
-    cout << sum << endl;
-    
-
+    cout << sum << '\n';
 }
-
-
 /*You are given a sequence of integers. Output the alternating sum of this sequence. In other words, output a1−a2+a3−a4+a5−…
 . That is, the signs of plus and minus alternate, starting with a plus.
 
