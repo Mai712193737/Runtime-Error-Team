@@ -1,7 +1,18 @@
 #include <iostream>
 #include <string>
 using namespace std;
+int main (){
+    int n , x ;
+    char  y ;
+    cin >> n ;
 
+    for (int i = 0 ; i < n ; i++){
+        cin >> x >> y ;
+        for (int j = 0 ; j < x ; j++){
+            cout << y ;
+        }
+
+}
 /*Run-length encoding (RLE) is a compression method where consecutive occurrences of the same data are replaced with a count of the repetition. For example, the string "AAAABBBCCDAA" would be encoded as "4A3B2C1D2A".
 
 However, Farid has a unique twist to his RLE algorithm: If a character occurs more than 9 consecutive times, he considers it a different character. For example, "ZAAAAAAAAAAAABB" would be encoded into "1Z9A3A2B".

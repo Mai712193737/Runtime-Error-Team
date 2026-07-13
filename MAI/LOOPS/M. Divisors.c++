@@ -1,6 +1,16 @@
 #include <iostream>
 #include <string>
 using namespace std;
+int main (){
+    int n , m ;
+    cin >> n >> m ;
+    for (int i = 1 ; i <= m ; i++){
+        if (n % i == 0){
+            cout << i << " is a divisor of " << n << endl;
+        }
+    }
+    return 0 ;
+}
 /*You will be given two integers N
  and M
  , where your task is to print the numbers from 1 to M

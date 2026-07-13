@@ -1,6 +1,16 @@
 #include <bits/stdc++.h>
 using namespace std;
+int main (){
+    int x,y; 
+    cin>>x>>y;
 
+    long long ans=1;
+    cout << pow(x,y);
+    
+    if (x==0 && y==0){
+        cout << 1;
+    }
+}
 /*You are given two integers x
  and y
  , calculate xy

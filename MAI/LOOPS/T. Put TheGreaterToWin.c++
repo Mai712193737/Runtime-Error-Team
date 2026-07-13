@@ -1,6 +1,28 @@
 #include <iostream>
 #include <string>
 using namespace std;
+int main ( ){
+    long long m , n , x , y , grater1 =0 , grater2=0 ;
+    cin >> m >> n ;
+    for (int i =0 ; i< m ;i++){
+        cin >> x ;
+        if (x > grater1){
+            grater1 = x;
+        }
+    }
+    for ( int j =0; j < n; j++){
+        cin >> y ;
+         if (y > grater2){
+            grater2 = y;
+        }
+    }
+    // عودة لا يفوز إلا إذا كان معه كارت أكبر من أي شيء عند لامورو
+if (grater2 > grater1) {
+    cout << "Ouda" << endl;
+} else {
+    cout << "LAMORO" << endl;
+}
+}
 
 /*There is a game called "put the greater to win." Lamoro and his friend Ouda are addicted to the game. Each of them wants to win, so they are playing optimally. Lamoro has a sequence of cards a
  of size n

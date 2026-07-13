@@ -1,7 +1,11 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
+int n ;
+cin >> n ;
+for (int i = 0; i < n ; i++) {
+    cout << n << endl;
+}
 /*Given n
 , print n
  numbers such that their sum is divisible by n

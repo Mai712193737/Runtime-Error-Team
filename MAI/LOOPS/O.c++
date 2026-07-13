@@ -2,6 +2,20 @@
 #include <string>
 using namespace std;
 
+int main (){
+    int n , a = 0 , count = 0 ;
+    cin >> n ;
+    int b = n ;
+    for (int i = 1 ; i < n ; i++){
+        if (n*n == a*a + b*b && a <= n / 2 && b > n / 2){ 
+            count++;
+        }
+        a++ ;
+        b-- ;
+    }
+cout << count << endl;
+    return 0 ;
+}
 /*Farid stumbled upon a stick of length n
 , sparking his curiosity about the number of right-angled triangles he could form with all sides being equal, where this stick serves as the hypotenuse.
 

@@ -1,6 +1,36 @@
 #include <iostream>
-#include <string>
 using namespace std;
+
+int main() {
+    int n, x, a;
+    cin >> n >> x;
+
+    int last_height = 0;
+    bool is_safe = true;
+
+    for (int i = 0; i < n; i++) {
+        cin >> a;
+        
+        if (i == 0) {
+           
+            last_height = a; 
+        } else {
+            if (last_height - a > x) {
+                is_safe = false;
+                break;
+            }
+            last_height = a; 
+        }
+    }
+
+    if (is_safe && last_height > x) {
+        is_safe = false;
+    }
+
+    cout << (is_safe ? "YES" : "NO") << endl;
+    return 0;
+}
+
 
 /*n a land full of superheros, Gemy has a strange super power. Gemy has the ability to shrink his body to any size he wants.
 
