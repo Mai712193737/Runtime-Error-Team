@@ -1,4 +1,9 @@
-
+*int main (){
+    long long n , x ;
+    cin >> n >> x ;
+    cout << n % x ;
+    return 0 ;
+}
 
 
 /*You have a total of n

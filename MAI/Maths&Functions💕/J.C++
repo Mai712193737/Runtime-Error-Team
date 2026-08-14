@@ -1,3 +1,19 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main (){
+    int n , count =0;
+    cin >> n ;
+    for (int i = 0 ; i < n ; i++){
+        int x ;
+        cin >> x ;
+        if (x % 2 == 0){
+            count++ ;
+        }
+
+    }
+ cout << (count ==0 ? -1 : count) << endl ;
+ return 0 ;
+}
 /*You are given an array of n
  integers and an integer l
 . Your task is to find the largest subset of the array that has a least common multiple (LCM) equal to l

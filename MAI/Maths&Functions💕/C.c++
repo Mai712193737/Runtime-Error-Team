@@ -1,3 +1,35 @@
+#include <bits/stdc++.h>
+using namespace std;
+int GCD(long long x , long long y ){
+   while (y!=0){
+    long long a = x%y ;
+    x = y ;
+    y = a ;
+    return x ;
+   }
+}
+int main (){
+    long long n , q ;
+    cin >> n >> q ;
+    long long a[n] ;
+    for (int i = 0 ; i < n ; i++){
+        cin >> a[i] ;
+    }
+    long long gcd = a[0] ;
+    for (int i = 1 ; i < n ; i++){
+        gcd = GCD(gcd , a[i]) ;
+    }
+    long long  mod = 1e9 + 7 ;
+    long long Multiplier = 1 ;
+    for (int i = 0 ; i < q ; i++){
+        long long x ;
+        cin >> x ;
+        multiplier = (multiplier * (x%mod )) % mod ;
+        long long ans = ((gcd %mod) * x) % mod ;
+        cout << ans << endl ;
+    }
+} 
+
 
 
 /*You are given an array a

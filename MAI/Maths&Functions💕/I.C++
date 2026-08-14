@@ -1,4 +1,23 @@
 
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    long long n, q;
+    double m;
+    cin >> n >> q >> m;
+
+    double sum = n * m;
+
+    for (int i = 0; i < q; i++) {
+        double val;
+        cin >> val;
+        sum += val;
+    }
+    cout << fixed << setprecision(6) << sum / (n + q) << "\n";
+
+    return 0;
+}
 
 /*A sequence of n
  numbers has a known mean value, but the actual numbers in the sequence are unknown. You are given q
